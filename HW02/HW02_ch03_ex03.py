@@ -39,17 +39,27 @@
 ################################################################################
 # Write your functions below:
 # Body
+def edges(s):
+	s=(s+' ')*4
+	print(s, end=' ')
 
+def line(a,s):
+	print(a, end=' ')
+	edges(s)
+	print(a, end=' ')
+	edges(s)
+	print(a)
 
+def two_by_two():
+	line('+','-')
+	line('|',' ')
+	line('|',' ')
+	line('|',' ')
 
-
-
-
-
-
-
-
-
+def four_by_four():
+	two_by_two()
+	two_by_two()
+	line('+', '-')
 
 # Write your functions above:
 ################################################################################
@@ -59,8 +69,8 @@ def main():
     two_by_two()
     four_by_four()
     """
-    print("Hello World!")
-    
+    #print("Hello World!")
+    four_by_four()
 
 
 

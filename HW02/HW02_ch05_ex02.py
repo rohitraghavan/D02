@@ -21,13 +21,22 @@
 # Write your functions below:
 # Body
 
+def check_fermat(a,b,c,n):
+	if n > 2:
+		if a**n + b**n == c**n:
+			print("Holy smokes, Fermat was wrong!")
+		else:
+			print("No, that doesn't work.")
+	else:
+		print("No, that doesn't work.")
 
 
-
-
-
-
-
+def check_fermat_ints():
+	a=int(input("Enter value a:"))
+	b=int(input("Enter value b:"))
+	c=int(input("Enter value c:"))
+	n=int(input("Enter value n:"))
+	check_fermat(a,b,c,n)
 
 # Write your functions above:
 ################################################################################
@@ -39,8 +48,9 @@ def main():
     check_fermat_ints()
     check_fermat()
     """
-    print("Hello World!")
-
+    #print("Hello World!")
+    #check_fermat(1,2,3,4)
+    check_fermat_ints()
 
 
 if __name__ == "__main__":
